@@ -13,5 +13,8 @@ https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_prob
 |   2   | uDebugInput.txt  | Input file with example cases                      |
 |   3   | uDebugOutput.txt | Output file of example cases                       |
 
-<img src="Capture.PNG" width="200">
+### Instructions
+- Should just work, I didn't add typing in an input name so any different input files will need to be changed in the code
+
+<img src="Capture.PNG" width="600">
 
