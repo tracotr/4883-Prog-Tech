@@ -27,25 +27,20 @@ int main()
 
         int max_cycle = 1; // keeping track of the max cycle found
         
-            for (start; start <= end; start++) {
-                // Continue algo until num == 1
+            for (start; start <= end; start++) { // until A == B pmuch
                 int num = start;
-                int cycle = 1;
+                int cycles = 1;
                 while (num != 1) { // until the number we're running is 1
-                    if (num % 2 == 0) // if even
-                        num /= 2;
-                    else 
-                        num = num * 3 + 1;
+                    num = (num % 2 == 0)? num / 2: num * 3 + 1; // divide by 2 if even, *3+1 if odd
 
-                    cycle++;
+                    cycles++;
                 }
 
-                if(cycle > max_cycle)
-                    max_cycle = cycle;
+                if(cycles > max_cycle)
+                    max_cycle = cycles;
             }
 
         cout << A << " " << B << " " << max_cycle << endl;
-        max_cycle = 0;
     }
 
     //i.close();
