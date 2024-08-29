@@ -1,7 +1,7 @@
 ## A03
-### Jaxon King
-### 4883
-### Description:
+#### Jaxon King
+#### 4883
+#### Description:
 
 onlinejudge.org problem 10055
 https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=996
