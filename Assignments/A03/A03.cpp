@@ -16,11 +16,12 @@ int main() {
     ifstream i("uDebugInput.txt");
     ofstream o("uDebugOutput.txt");
     
-    long B = 0, A = 0;
+    long long B = 0, A = 0; // long long because test cases go past int_max
 
     while (i >> A >> B) {
         // if A is greater than B, get the difference of a and b, difference of b and a otherwise
-        long r = (A > B)? A - B : B - A; 
+        cout << A << " " << B << endl;
+        long long r = (A > B)? A - B : B - A; 
         o << r << endl;
     }
 
