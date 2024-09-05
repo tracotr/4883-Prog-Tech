@@ -17,24 +17,17 @@ int main()
     //ifstream i("uDebugInput.txt");
     //ofstream o("uDebugOutput.txt");
 
-    int A;
-    long long B = 0;
-    int cur = 0;
+    string A;
 
     while(cin >> A){
-        B = 0;
-        int power = 0;
+        if(A == "0") break; // if "0"  we dont wanna print anything
 
-        while(A != 0){
-            cur = A % 10;
+        int n = A.length(); // get the length of the number
 
-            int add = cur * pow(2, power) - 1;
-            B += add;
+        int B = 0;
 
-            power++;
-            A /= 10;
-
-            cout << cur << "*" << "2^" << power << "-1=" << add << "=" << B << endl;
+        for(int i = 0; i < n; i++){
+            B += (A[i] - '0') * (pow(2, n - i) - 1); // since we start at the furthest left digit, n - i is going to be largest exponent we need
         }
 
         cout << B << endl;
