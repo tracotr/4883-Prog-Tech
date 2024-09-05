@@ -1,10 +1,10 @@
-## 00100
+## 00272
 #### Jaxon King
 #### 4883
 #### Description:
 
-onlinejudge.org problem 00100
-https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=4&page=show_problem&problem=208
+onlinejudge.org problem 00272
+https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=36
 
 ### Files
 
