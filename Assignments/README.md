@@ -8,4 +8,6 @@
 |   3   |[P00272](./P00272/README.md)| TEX Quotes and why i will never use it			|
 |   4   |[P00575](./P00575/README.md)| skew binary, no                                  |
 |   5   |[P10035](./P10035/README.md)| Primary arithmetic (MATH IS BAD)                 |
-|   6   |[P11988](./P11988/README.md)| beiju text (fix ur keyboard)                     |
+|   6   |[P10071](./P10071/README.md)| Back to High School Physics but im in physics rn |
+|   7   |[P10302](./P10302/README.md)| Summation of Polynomials EASY!!!!!!!!            |
+|   8   |[P11988](./P11988/README.md)| beiju text (fix ur keyboard)                     |
