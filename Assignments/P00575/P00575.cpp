@@ -29,7 +29,7 @@ int main()
             cur = A % 10;
 
             int add = cur * pow(2, power) - 1;
-            B += add;
+            B += add;   
 
             power++;
             A /= 10;
