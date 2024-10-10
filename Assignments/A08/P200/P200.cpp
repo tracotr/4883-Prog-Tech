@@ -30,9 +30,9 @@ public:
             return;
 
         g[i][j] = '0';
-        if (i + 1 >= 0 && i + 1 < g.size()) // up
+        if (i + 1 >= 0 && i + 1 < g.size()) // down
             DFS(g, i + 1, j);
-        if (i - 1 >= 0 && i - 1 < g.size()) // down
+        if (i - 1 >= 0 && i - 1 < g.size()) // up
             DFS(g, i - 1, j);
         if (j + 1 >= 0 && j + 1 < g[0].size()) // right
             DFS(g, i, j + 1);
