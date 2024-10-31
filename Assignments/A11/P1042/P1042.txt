@@ -1,0 +1,41 @@
+class Solution {
+public:
+    vector<int> gardenNoAdj(int n, vector<vector<int>>& paths) {
+        vector<vector<int>> adjacent(n);
+        // since each graph node can only have 3 neighbors, cap at 3
+        for (auto& v : adjacent) {
+            v.reserve(3);
+        }
+
+        // create a vector of n flowers, default 1
+        vector<int> flowers = vector<int>(n, 1);
+
+        // add to adjacency list
+        for (const auto& p : paths) {
+            adjacent[p[0] - 1].push_back(p[1] - 1);
+            adjacent[p[1] - 1].push_back(p[0] - 1);
+        }
+
+        // for every graph node in list
+        for (int i = 0; i < n; i++) {
+            // for every adjacent node, add to list of each adjacent flower type
+            list<int> notAvail;
+
+            // push all adjacent flowers to list of unavailable flowers
+            for (int j : adjacent[i]) {
+                notAvail.push_back(flowers[j]);
+            }
+
+            // while current flower is being found, increment
+            int flow = 1;
+            while (find(notAvail.begin(), notAvail.end(), flow) !=
+                   notAvail.end()) {
+                flow++;
+            }
+            // set increment to current flower
+            flowers[i] = flow;
+        }
+
+        return flowers;
+    }
+};
